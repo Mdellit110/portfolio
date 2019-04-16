@@ -1,0 +1,28 @@
+.content {
+  position: fixed;
+  background-color: #ceccce;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  overflow-x: scroll;
+}
+
+.page {
+  background-color: #ceccce;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10%;
+}
+
+.page h1 {
+  position: absolute;
+  margin-top: 2%;
+  width: auto;
+  height: 6%;
+  background-color: #6ead3a;
+  text-align: right;
+  padding: 5px;
+  padding-right: 15px;
+}

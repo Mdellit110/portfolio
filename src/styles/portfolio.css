@@ -1,0 +1,30 @@
+.portfolio-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.legend {
+  display: flex;
+  justify-content: space-around;
+}
+.carousel-container {
+  width: 60%;
+  height: 50%;
+  margin-top: 12%;
+}
+.carousel-slider {
+  box-shadow:  0rem 1rem 1rem rgba(0,0,0,.3);
+}
+.carousel-link {
+  text-decoration: none;
+  color: #ededef;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 1%;
+  font-size: 1rem;
+}
+.carousel-link:hover {
+  color: #6ead3a;
+}
