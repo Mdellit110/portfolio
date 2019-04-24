@@ -15,22 +15,22 @@
   width: 50%;
 }
 .project-card2 {
-  background: center / cover no-repeat url(https://i.imgur.com/t0ArjBI.png);
-  height: 50vmin;
-  width: 50%;
-}
-.project-card3 {
   background: center / cover no-repeat url(https://i.imgur.com/LMeLl2S.png);
   height: 50vmin;
   width: 50%;
 }
+.project-card3 {
+  background: center / cover no-repeat url(https://i.imgur.com/t0ArjBI.png);
+  height: 50vmin;
+  width: 50%;
+}
 .project-card4 {
-  background: center / cover no-repeat url(https://i.imgur.com/ImgpX39.png);
+  background: center / cover no-repeat url(https://i.imgur.com/hrGbwkI.png);
   height: 50vmin;
   width: 50%;
 }
 .project-card5 {
-  background: center / cover no-repeat url(https://i.imgur.com/hrGbwkI.png);
+  background: center / cover no-repeat url(https://i.imgur.com/ImgpX39.png);
   height: 50vmin;
   width: 50%;
 }
