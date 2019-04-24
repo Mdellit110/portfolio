@@ -14,15 +14,18 @@
   display: flex;
   justify-content: flex-end;
   margin-left: 10%;
+  overflow-y: scroll;
 }
-
-.page h1 {
+.tag h1 {
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 10px;
+  transform:skewX(20deg);
+}
+.page .tag {
+  background-color: #6ead3a;
   position: absolute;
   margin-top: 2%;
-  width: auto;
-  height: 6%;
-  background-color: #6ead3a;
-  text-align: right;
-  padding: 5px;
-  padding-right: 15px;
+  right: -10px;
+  transform:skewX(-20deg);
 }

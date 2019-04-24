@@ -1,30 +1,83 @@
 .portfolio-page {
+  margin-top: 10%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
-.legend {
-  display: flex;
-  justify-content: space-around;
+.portfolio-page * {
+  margin: 2%;
 }
-.carousel-container {
-  width: 60%;
-  height: 50%;
-  margin-top: 12%;
+.project-card1 {
+  background: center / cover no-repeat url(https://i.imgur.com/5QGtW1R.png);
+  height: 50vmin;
+  width: 50%;
 }
-.carousel-slider {
-  box-shadow:  0rem 1rem 1rem rgba(0,0,0,.3);
+.project-card2 {
+  background: center / cover no-repeat url(https://i.imgur.com/t0ArjBI.png);
+  height: 50vmin;
+  width: 50%;
 }
-.carousel-link {
-  text-decoration: none;
-  color: #ededef;
-  padding: 1%;
+.project-card3 {
+  background: center / cover no-repeat url(https://i.imgur.com/LMeLl2S.png);
+  height: 50vmin;
+  width: 50%;
+}
+.project-card4 {
+  background: center / cover no-repeat url(https://i.imgur.com/ImgpX39.png);
+  height: 50vmin;
+  width: 50%;
+}
+.project-card5 {
+  background: center / cover no-repeat url(https://i.imgur.com/hrGbwkI.png);
+  height: 50vmin;
+  width: 50%;
+}
+.portfolio-links {
+  height: 100%;
+  margin: 0 auto;
+}
+.portfolio-links a {
+  display: none
+}
+.portfolio-links img {
+  display: none
+}
+.portfolio-links:hover {
+  height: 100%;
+  background-color: rgba(255,255,255,.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.site {
+  background-color: black;
+  color: white;
+  padding: 5px;
   border-radius: 5px;
-  margin: 1%;
-  font-size: 1rem;
 }
-.carousel-link:hover {
-  color: #6ead3a;
+.portfolio-links:hover a {
+  display: block;
+  align-self: center;
+  place-self: center;
+  text-decoration: none;
+}
+
+.portfolio-links:hover .site:hover {
+  background-color: white;
+  color: black;
+}
+
+.portfolio-links:hover a img {
+  display: block;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  align-self: center;
+  place-self: center;
+
+}
+.portfolio-links:hover a img:hover {
+  transform: scale(1.1);
 }
