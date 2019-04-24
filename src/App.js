@@ -5,8 +5,8 @@ import './styles/home.css';
 import './styles/content.css';
 import './styles/about.css';
 import './styles/portfolio.css';
+import './styles/contact.css';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import Content from './components/Content';
 class App extends Component {
@@ -55,7 +55,6 @@ class App extends Component {
         <NavBar
           toggle={this.toggleHome}
           goTo={this.goTo}/>
-        <Footer/>
         <Content
           about={this.about}
           portfolio={this.portfolio}
