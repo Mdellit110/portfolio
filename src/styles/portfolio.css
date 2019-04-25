@@ -81,3 +81,7 @@
 .portfolio-links:hover a img:hover {
   transform: scale(1.1);
 }
+.project-info {
+  margin: 0 auto;
+  width: 60%;
+}

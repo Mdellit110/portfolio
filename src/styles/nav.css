@@ -1,9 +1,9 @@
 sidebar {
   position: fixed;
   width: 15%;
-  min-width: 100px;
+  min-width: 131px;
   height: 100%;
-  left: -10px;
+  left: -12px;
   color: #ededef;
   background-color: #4c4947;
   transform:skewX(2deg);
