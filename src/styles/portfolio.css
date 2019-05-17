@@ -39,14 +39,14 @@
   margin: 0 auto;
 }
 .portfolio-links a {
-  display: none
+  display: none;
 }
 .portfolio-links img {
-  display: none
+  display: none;
 }
 .portfolio-links:hover {
   height: 100%;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, 0.5);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -76,7 +76,6 @@
   margin: 0 auto;
   align-self: center;
   place-self: center;
-
 }
 .portfolio-links:hover a img:hover {
   transform: scale(1.1);
@@ -84,4 +83,50 @@
 .project-info {
   margin: 0 auto;
   width: 60%;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio-page {
+    margin-top: 50%;
+  }
+  .project-info {
+    margin: 20% 0;
+  }
+  .portfolio-links:hover .site:hover {
+    background-color: white;
+    color: black;
+  }
+  .portfolio-links:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .portfolio-links {
+    height: 100%;
+    margin-top: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-content: flex-end;
+    bottom: 5px;
+  }
+  .portfolio-links a {
+    display: block;
+    padding: 5px;
+    margin-top: 0;
+    height: 83%;
+    width: 41%;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+  .portfolio-links img {
+    display: block;
+    image-resolution: from-image;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .portfolio-links:hover a img {
+    display: block;
+    image-resolution: from-image;
+    height: 100%;
+    width: 100%;
+  }
 }

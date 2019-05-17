@@ -20,7 +20,7 @@
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 10px;
-  transform:skewX(20deg);
+  transform: skewX(20deg);
 }
 .page .tag {
   background-color: #6ead3a;
@@ -28,5 +28,20 @@
   z-index: 1;
   margin-top: 2%;
   right: -10px;
-  transform:skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .page .tag {
+    background-color: #6ead3a;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20%;
+    right: -10px;
+    transform: skewX(-20deg);
+  }
 }

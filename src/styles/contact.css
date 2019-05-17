@@ -19,7 +19,7 @@
   margin-bottom: 2%;
   border: none;
   border-bottom: 1px solid black;
-  background-color: #ceccce;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   font-size: 1.5rem;
 }
@@ -27,13 +27,63 @@
   margin-bottom: 2%;
   border: none;
   border-bottom: 1px solid black;
-  background-color: #ceccce;
+  background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 250px;
   font-size: 1.5rem;
+  text-placeholde-color: black;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .form-input {
   width: 100%;
   height: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-page {
+    display: flex;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-container input {
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 20px;
+    font-size: 100%;
+  }
+  .form-container textarea {
+    margin-bottom: 2%;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 250px;
+    font-size: 1rem;
+    text-placeholde-color: black;
+  }
+
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
 }
