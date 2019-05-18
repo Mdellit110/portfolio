@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import {withRouter} from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { withRouter as router } from "react-router-dom";
 ReactDOM.render(
-  <withRouter>
+  <router>
     <App />
-  </withRouter>,
-  document.getElementById('root'));
+  </router>,
+  document.getElementById("root")
+);

@@ -1,4 +1,4 @@
-sidebar {
+.sidebar {
   position: fixed;
   width: 15%;
   min-width: 131px;
@@ -46,7 +46,7 @@ sidebar {
 }
 
 @media only screen and (max-width: 600px) {
-  sidebar {
+  .sidebar {
     position: fixed;
     width: 100%;
     height: 8%;
