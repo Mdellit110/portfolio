@@ -8,7 +8,7 @@ const Content = props => {
   const [tag, setTag] = useState("About");
   return (
     <div className="content" onScroll={() => setTag(handleScroll())}>
-      <div className={`tag ${tag}`}>
+      <div className="tag">
         <h1>{tag}</h1>
       </div>
       <AboutPage className="about" about={about} />
