@@ -7,6 +7,7 @@
   color: #ededef;
   background-color: #4c4947;
   transform: skewX(2deg);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.4);
 }
 
 .nav-links {
