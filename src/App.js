@@ -21,6 +21,7 @@ class App extends Component {
     this.toggleHome = this.toggleHome.bind(this);
     this.goTo = this.goTo.bind(this);
     this.isMobileDevice = this.isMobileDevice.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
   isMobileDevice() {
     return (
@@ -30,16 +31,15 @@ class App extends Component {
   }
   toggleHome() {
     if (this.state.is_home === "home-page") {
-      this.setState(prevState => ({
+      this.setState(() => ({
         is_home: "hidden"
       }));
     } else {
-      this.setState(prevState => ({
+      this.setState(() => ({
         is_home: "home-page"
       }));
     }
   }
-
   goTo(ref) {
     if (ref === "about") {
       this.about.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -54,7 +54,18 @@ class App extends Component {
         block: "start"
       });
     }
-    console.log(ref);
+  }
+
+  handleScroll() {
+    let currentTag;
+    if (this.about.current.getBoundingClientRect().bottom > 0) {
+      currentTag = "About";
+    } else if (this.portfolio.current.getBoundingClientRect().bottom > 50) {
+      currentTag = "Portfolio";
+    } else if (this.contact.current.getBoundingClientRect().bottom < 916.375) {
+      currentTag = "Contact";
+    }
+    return currentTag;
   }
 
   render() {
@@ -67,6 +78,7 @@ class App extends Component {
         />
         <NavBar toggle={this.toggleHome} goTo={this.goTo} />
         <Content
+          handleScroll={this.handleScroll}
           about={this.about}
           portfolio={this.portfolio}
           contact={this.contact}

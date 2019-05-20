@@ -5,9 +5,6 @@ const ProjectPage = props => {
   const { portfolio } = props;
   return (
     <div ref={portfolio} className="page">
-      <div className="tag">
-        <h1>Portfolio</h1>
-      </div>
       <div className="portfolio-page">
         <div className="project-card1">
           <div className="portfolio-links">

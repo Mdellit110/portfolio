@@ -19,3 +19,10 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.buttoni {
+  position: fixed;
+  height: 30px;
+  width: 100px;
+  background-color: red;
+}

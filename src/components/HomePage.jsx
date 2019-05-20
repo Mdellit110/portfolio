@@ -11,12 +11,9 @@ const HomePage = props => {
     return manager;
   }
   useEffect(() => {
-    console.log(isMobile());
     if (isMobile) {
-      let deltaY = 0;
       const manager = setUpHammer();
-      manager.on("swipeup", e => {
-        console.log("swipeup");
+      manager.on("swipeup", () => {
         toggle();
         manager.off();
       });
@@ -24,7 +21,7 @@ const HomePage = props => {
   }, []);
 
   return (
-    <div className={home} onClick={isMobile() ? "" : toggle}>
+    <div className={home} onClick={isMobile() ? null : toggle}>
       <div className="home-content">
         <h1>Hi, I'm Matt, and I enjoy being constantly challenged </h1>
         <div className="to-portfolio">

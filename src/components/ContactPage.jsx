@@ -4,9 +4,6 @@ const ContactPage = props => {
   const { contact } = props;
   return (
     <div ref={contact} className="page">
-      <div className="tag">
-        <h1>Contact Me</h1>
-      </div>
       <div className="contact-page">
         <form
           className="contact-form"

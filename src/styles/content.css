@@ -23,13 +23,34 @@
   padding-left: 10px;
   transform: skewX(20deg);
 }
-.page .tag {
+.content .tag {
   background-color: #6ead3a;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   margin-top: 2%;
   right: -10px;
   transform: skewX(-20deg);
+  transition: 1s smooth;
+}
+.tag.About {
+  animation: changetag 2s;
+}
+.tag.Portfolio {
+  animation: changetag 2s;
+}
+.tag.Contact {
+  animation: changetag 2s;
+}
+@keyframes changetag {
+  0% {
+    margin-top: 2%;
+  }
+  30% {
+    margin-top: 5%;
+  }
+  100% {
+    margin-top: 2%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -37,9 +58,9 @@
     margin-left: 0%;
     width: 100%;
   }
-  .page .tag {
+  .content .tag {
     background-color: #6ead3a;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     margin-top: 20%;
     right: -10px;
